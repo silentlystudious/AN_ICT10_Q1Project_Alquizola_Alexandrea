@@ -8,11 +8,6 @@ closing_hour="10:00PM"
 order= "Dine-In Available"
 enter= "Take Out Available"
 
-# Boolean Data Type
-delivery= True
-dine_in= True
-TakeOut= False
-
 # Tuple Data Type
 business_hours= ("11:00AM", "10:00PM")
 
