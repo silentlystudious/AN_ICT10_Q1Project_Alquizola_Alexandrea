@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Alex's Delicious Donuts</title>
+
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" target="_self" class="mt-4"
+                style="font-size: 15px; font-weight: bold">
+                <img class="img-responsive" src="logo.png" style="max-width: 100px; margin-right: 10px"> ALEX'S
+                DELICIOUS DONUTS
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html" target="_self">ORDER NOW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_self">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-center navbar-expand-lg ms-auto">
+                    <div class="navbar-search">
+                        <input type="search" placeholder="Search for..." name="search">
+                        <button>Input</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- ALERT BUTTON -->
+    <div class="container-fluid mt-1 mb-3 alert alert-danger alert-dismissible fade show" role="alert"
+        style="text-align: center; max-width: 95%;">
+        <strong>Donuts may include the following allergens: <i>gluten, nuts, and dairy</i>. To those who are at risk at
+            such
+            allergies, please consult a health professional.</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- HEADER -->
+    <div class="container">
+        <div class="header title text-center">
+            <i class="fas fa-utensils restaurant-icon" style="color: #2c3e50"></i>
+            <div id="name1" class="display-4 fw-bold"></div>
+            <div id="owner" class="fs-5 mt-2"></div>
+            <div id="since" class="fs-6"></div>
+        </div>
+
+        <!-- MENU CARD -->
+        <div class="menu-card">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="heading" id="heading1" colspan="2" style="color:#2c3e50;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight: bold;">
+                        <td style="color: #e2427a">Product Name</td>
+                        <td style="color: #50b9af">Price (₱)</td>
+                    </tr>
+                    <tr>
+                        <td id="prod1"></td>
+                        <td id="price1" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod2"></td>
+                        <td id="price2" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod3"></td>
+                        <td id="price3" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod4"></td>
+                        <td id="price4" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod5"></td>
+                        <td id="price5" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod6"></td>
+                        <td id="price6" class="price"></td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="opening-hours">
+            <i class="fas fa-clock me-2"></i>
+            <span id="openingHours"></span>
+        </div>
+
+        <div class="text-center mt-4 mb-4">
+            <span id="orderType" class="badge bg-danger"></span>
+            <span id="enterType" class="badge bg-primary"></span>
+        </div>
+    </div>
+
+
+    <!-- PYTHON SCRIPT -->
+    <script type="py" src="index.py"></script>
+</body>
+
+</html>

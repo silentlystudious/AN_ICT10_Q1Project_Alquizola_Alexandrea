@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <title>Alex's Delicious Donuts</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" target="_self" class="mt-4"
+                style="font-size: 15px; font-weight: bold">
+                <img class="img-responsive" src="logo.png" style="max-width: 100px; margin-right: 10px"> ALEX'S
+                DELICIOUS DONUTS
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+                data-bs-toggle="collapse" data-bs-target="#navigation" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html" target="_self">ORDER NOW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_self">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-center navbar-expand-lg ms-auto">
+                    <div class="navbar-search">
+                        <input type="search" placeholder="Search for..." name="search">
+                        <button>Input</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- HEADER -->
+    <div class=" container">
+        <div class="header title text-center">
+            <i class="fa-solid fa-envelope restaurant-icon" style="color: #2c3e50"></i>
+            <div id="header" class="display-4 fw-bold"></div>
+            <div id="comment" class="fs-5 mt-2"></div>
+        </div>
+    </div>
+
+    <!-- MENU CARD -->
+    <div class="container">
+        <div class="card-deck row row-cols-3">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-location-dot restaurant-icon"
+                                style="color: #F19099; justify-content: center;"></i><br>Our Location</h5>
+                        <p class="card-text">Barangay Cutcut, Nepo Center</p>
+                        <p class="card-text">Angeles City, Pampanga, Philippines</p>
+                        <p class="card-text"><small class="text-muted"><i>*Every customer must follow the first come,
+                                    first serve protocol.</i></small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-phone-volume restaurant-icon"
+                                style="color: #F19099; justify-content: center;"></i><br>Contact Numbers</h5>
+                        <p class="card-text">(0915) 860 1668</p>
+                        <p class="card-text">(0969) 645 4495</p>
+                        <p class="card-text">(0933) 676 2615</p>
+                        <p class="card-text"><small class="text-muted"><i>*May take a few hours to reply.</i></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa-solid fa-envelope restaurant-icon"
+                                style="color: #F19099; justify-content: center;"></i><br>Email Addresses</h5>
+                        <p class="card-text">alquizola.al@obmontessori.edu.ph</p>
+                        <p class="card-text">archivesnialex@gmail.com</p>
+                        <p class="card-text"><small class="text-muted"><i>*May take two to five business days to
+                                    reply.</i></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="opening-hours">
+            <i class="fas fa-clock me-2"></i>
+            <span id="openingHours"></span>
+        </div>
+
+        <div class="text-center mt-4 mb-4">
+            <span id="orderType" class="badge bg-danger"></span>
+            <span id="enterType" class="badge bg-primary"></span>
+        </div>
+    </div>
+
+    <!-- PYTHON SCRIPT -->
+    <script type="py" src="contact.py"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="order.css" />
+    <title>Alex's Delicious Donuts</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" target="_self" class="mt-4"
+                style="font-size: 15px; font-weight: bold">
+                <img class="img-responsive" src="logo.png" style="max-width: 100px; margin-right: 10px"> ALEX'S
+                DELICIOUS DONUTS
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+                data-bs-toggle="collapse" data-bs-target="#navigation" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html" target="_self">ORDER NOW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_self">CONTACT US</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-center navbar-expand-lg ms-auto">
+                    <div class="navbar-search">
+                        <input type="search" placeholder="Search for..." name="search">
+                        <button>Input</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- ORDER FORM -->
+    <div class="container-fluid box mt-3 mb-3">
+        <div class="row row-cols-2">
+            <div class="col-12">
+                <h3>Food Ordering Form</h3>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h3 style="text-align: justify;">Menu:</h3>
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item1" value=35.00>
+                                <label for="product-1">
+                                    <img src="1.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>White Almond Chocolate Donut</h5>
+                                <p>Price: ₱35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item2" value=45.00>
+                                <label for="product-1">
+                                    <img src="2.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>Matcha Almond Donut</h5>
+                                <p>Price: ₱45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item3" value=35.00>
+                                <label for="product-1">
+                                    <img src="3.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>Raspberry Sprinkle Donut</h5>
+                                <p>Price: ₱35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item4" value=35.00>
+                                <label for="product-1">
+                                    <img src="4.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>Strawberry Sprinkle Donut</h5>
+                                <p>Price: ₱35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item5" value=40.00>
+                                <label for="product-1">
+                                    <img src="5.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>Caramel Almond Drizzled Donut</h5>
+                                <p>Price: ₱40.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-2 col-lg-4 col-md-6 col-sm-8">
+                                <input type="checkbox" id="item6" value=40.00>
+                                <label for="product-1">
+                                    <img src="6.png" style="width: 90px;">
+                                </label>
+                            </div>
+                            <div class="col-10 col-lg-8 col-md-6 col-sm-4">
+                                <h5>Chocolate Coffee Drizzled Donut</h5>
+                                <p>Price: ₱40.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-justify">
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                            <h3 style="text-align: justify;">Customer Details:</h3>
+                            <br>
+                            <label for="customer">Customer Name</label>
+                            <input type="text" id="customer" placeholder="Customer Name">
+                            <br><br>
+                            <label for="address">Contact Address</label>
+                            <input type="text" id="address" placeholder="Contact Address">
+                            <br><br>
+                            <label for="address">Contact Number</label>
+                            <input type="text" id="contact_number" placeholder="Contact Number">
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn" py-click="create_order" style="text-align: center;"
+                onclick="order()">Create Order</button><br><br>
+        </div>
+    </div>
+
+    <div class="container-fluid box mt-3 mb-3">
+        <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
+            <h3>Order Summary</h3>
+            <div class="output" id="order_output1"></div>
+            <div class="output" id="order_output2"></div>
+            <div class="output" id="order_output3"></div>
+            <div class="output" id="show"></div>
+        </div>
+    </div>
+
+    <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
+
+        <a type="button" class="btn btn-primary" href="index.html">
+            <i class="fa-solid fa-house restaurant-icon" style="color: #2c3e50"></i>
+            Block level button</a>
+    </div>
+
+    <br>
+
+    <!-- PYTHON SCRIPT -->
+    <script type="py" src="order.py"></script>
+</body>
+
+</html>
