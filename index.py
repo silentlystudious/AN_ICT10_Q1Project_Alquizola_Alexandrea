@@ -16,6 +16,9 @@ delivery= True
 dine_in= True
 TakeOut= False
 
+# Float Data Type
+tax_rate= 0.08
+
 # List Data Type
 product_names= ["White Almond Chocolate Donut", "Matcha Almond Donut", "Raspberry Sprinkle Donut", "Strawberry Sprinkle Donut", "Caramel Almond Drizzled Donut", "Chocolate Coffee Drizzled Donut"]
 

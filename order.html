@@ -15,10 +15,10 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-
     <!-- EXTERNAL CSS -->
-    <link rel="stylesheet" type="text/css" href="order.css" />
+    <link rel="stylesheet" type="text/css" href="order.css">
     <title>Alex's Delicious Donuts</title>
+
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             </a>
 
             <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
-                data-bs-toggle="collapse" data-bs-target="#navigation" aria-label="Toggle navigation">
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -183,8 +183,9 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn" py-click="create_order" style="text-align: center;"
-                onclick="order()">Create Order</button><br><br>
+            <button type="submit" class="btn" py-click="create_order" style="text-align: center;" onclick="order()"> <i
+                    class="fa-solid fa-shopping-cart restaurant-icon" style="color: #124649"></i> Create
+                Order</button><br><br>
         </div>
     </div>
 
@@ -198,19 +199,19 @@
         </div>
     </div>
 
-    <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
+    <div class="container">
+        <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
 
-        <a type="button" class="btn btn-primary" href="index.html">
-            <i class="fa-solid fa-house restaurant-icon" style="color: #2c3e50"></i>
-            Back to Home Page</a>
+            <a type="button" class="btn btn-primary" href="index.html">
+                <i class="fa-solid fa-house restaurant-icon" style="color: #038C8C"></i>
+                Go back to home page </a>
+
+        </div>
     </div>
-
     <br>
 
     <!-- PYTHON SCRIPT -->
     <script type="py" src="order.py"></script>
 </body>
 
-
 </html>
-

@@ -15,6 +15,44 @@ label {
     font-weight: bold;
 }
 
+.btn-primary {
+    justify-content: center;
+    background-color: #13F2DC;
+    border: 2.5px #038C8C solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #F19099;
+    box-sizing: border-box;
+    color: #038C8C;
+    font-family: DynaPuff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 4px;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.85s ease;
+}
+
+.btn-primary:hover {
+    justify-content: center;
+    background-color: #D9849B;
+    border: 2.5px #731931 solid;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #124649;
+    box-sizing: border-box;
+    color: #731931;
+    font-family: DynaPuff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 4px;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.85s ease;
+}
+
 .navbar {
     align-content: center;
     background-image: linear-gradient(135deg, #F2A0B6 0%, #66F2E4 100%);
@@ -189,5 +227,11 @@ td {
 .restaurant-icon {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.icon {
+    font-size: 1rem;
+    margin-bottom: 5px;
     color: #f8f9fa;
 }
