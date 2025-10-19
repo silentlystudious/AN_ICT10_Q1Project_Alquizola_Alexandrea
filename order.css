@@ -234,7 +234,10 @@ input[type="checkbox"]:checked:after {
 
 h3 {
     background: linear-gradient(135deg, #F2A0B6 0%, rgb(240, 138, 185));
-    border: 3.5px solid #fde0f6;
+    border-left: 3.5px #ffffff solid;
+    border-top: 3.5px #ffffff solid;
+    border-bottom: 3.5px #FDCED0 solid;
+    border-right: 3.5px #FDCED0 solid;
     border-radius: 8px;
     font-family: Cherry Bomb One;
     padding: 5px 5px;
@@ -245,7 +248,10 @@ h3 {
 .box {
     background-color: #50b9af;
     border-radius: 8px;
-    border: 3.5px #ffffff solid;
+    border-left: 3.5px #ffffff solid;
+    border-top: 3.5px #ffffff solid;
+    border-bottom: 3.5px #a7e8f4 solid;
+    border-right: 3.5px #a7e8f4 solid;
     border-radius: 5px;
     box-shadow: 0 5px 5px #EAA6D7;
     box-sizing: border-box;
