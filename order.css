@@ -180,11 +180,19 @@ input[type="checkbox"]:checked:after {
     color: #e2427a;
 }
 
-.house {
+.btn {
     color: #23778c;
 }
 
-.house:hover {
+.btn:hover {
+    color: #D2779E
+}
+
+.btn-primary {
+    color: #23778c;
+}
+
+.btn-primary:hover {
     color: #D2779E
 }
 
@@ -248,14 +256,6 @@ h3 {
 
 .box h3 {
     color: #e2427a;
-}
-
-.cart {
-    color: #038C8C;
-}
-
-.cart:hover {
-    color: #731931
 }
 
 .btn-primary {
