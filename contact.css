@@ -11,8 +11,8 @@ body {
     letter-spacing: 2px;
 }
 
-label {
-    font-weight: bold;
+.input {
+    color: #89203E;
 }
 
 .navbar {
@@ -55,7 +55,6 @@ label {
 
 .navbar ul a:hover {
     background: #D2779E;
-    border: none;
     border-radius: 5px;
     box-shadow: #D5F9E3;
     color: #89203E;
@@ -144,7 +143,10 @@ label {
 .card {
     background-color: #FDCED0;
     border-radius: 8px;
-    border: 3.5px #ffffff solid;
+    border-left: 3.5px #ffffff solid;
+    border-top: 3.5px #ffffff solid;
+    border-bottom: 3.5px #F2A0B6 solid;
+    border-right: 3.5px #F2A0B6 solid;
     border-radius: 5px;
     box-shadow: 0 5px 5px #e2427a;
     box-sizing: border-box;

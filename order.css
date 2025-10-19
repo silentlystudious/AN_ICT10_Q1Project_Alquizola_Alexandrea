@@ -180,6 +180,14 @@ input[type="checkbox"]:checked:after {
     color: #e2427a;
 }
 
+.house {
+    color: #23778c;
+}
+
+.house:hover {
+    color: #D2779E
+}
+
 .btn {
     background-color: #5AC9F9;
     border: 2.5px #348B9B solid;
@@ -234,11 +242,20 @@ h3 {
     box-shadow: 0 5px 5px #EAA6D7;
     box-sizing: border-box;
     color: #124649;
+    font-weight: 900;
     max-width: 95%;
 }
 
 .box h3 {
     color: #e2427a;
+}
+
+.cart {
+    color: #038C8C;
+}
+
+.cart:hover {
+    color: #731931
 }
 
 .btn-primary {
